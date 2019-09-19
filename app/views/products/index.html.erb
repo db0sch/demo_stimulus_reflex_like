@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+    <h1>My Product</h1>
+  </div>
+
+  <div class="row">
+    <% @products.each do |product| %>
+      <div class="col-12">
+        <div class="card-product my-2">
+          <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
+          <div class="d-flex align-items-center justify-content-between w-100 mr-5">
+            <div class="card-product-infos">
+              <h2>Product name</h2>
+              <p>Product description with <strong>relevant info</strong> only.</p>
+            </div>
+            <button data-product-id='<%= product.id %>' data-reflex="click->VoteReflex#upvote" class="btn btn-primary" type='button'>Upvote <span class="badge badge-light"><%= product.votes.count %></span></button>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

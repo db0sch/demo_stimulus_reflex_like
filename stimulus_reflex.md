@@ -139,8 +139,15 @@ how cool is that?
 
 ---
 
-# questions / wishes
+# performance?
+- make sure pages load fast
+- use caching
+- switch to [AnyCable](https://anycable.io) to scale websockets connections
 
+
+---
+
+# questions / wishes
 
 - current user in reflex
 - redirection after a reflex is stimulated
@@ -168,6 +175,7 @@ this is still an early-stage project
 
 
 ---
+
 
 
 ## but, devs, they want to have fun 

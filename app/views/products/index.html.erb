@@ -13,7 +13,7 @@
               <h2>Product name</h2>
               <p>Product description with <strong>relevant info</strong> only.</p>
             </div>
-            <button data-product-id='<%= product.id %>' data-reflex="click->VoteReflex#upvote" class="btn btn-primary" type='button'>Upvote <span class="badge badge-light"><%= product.votes.count %></span></button>
+            <button data-product-id='<%= product.id %>' data-reflex="click->ProductReflex#upvote" class="btn btn-primary" type='button'>Upvote <span class="badge badge-light"><%= product.votes.count %></span></button>
           </div>
         </div>
       </div>

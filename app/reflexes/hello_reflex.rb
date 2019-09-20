@@ -1,5 +1,5 @@
 class HelloReflex < StimulusReflex::Reflex
   def say_hi
-    @message = 'Hi!'
+    @message = element.dataset['sentence']
   end
 end
